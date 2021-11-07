@@ -36,9 +36,9 @@ let a;
 // las variables no pueden iniciar por un numero
 
 // La vinculacion prompt usa una funcion para pedirle al usuario que ingrese un valor
-prompt("Ingrese un valor");
-// que podemos asociar a una variable
-let valor = prompt("Ingrese un valor");
+// prompt("Ingrese un valor");
+// // que podemos asociar a una variable
+// let valor = prompt("Ingrese un valor");
 // Cuando llamamos a una funcion tambien se puede indicar como que se la invoca, o aplicamos
 
 // Cuando la funcion devuelve un valor, indica es un retorno
@@ -47,20 +47,20 @@ console.log(Math.min(0,2,3,4,5,6,7,8,9,10,11,12,13));
 
 // Podemos tener una ejecuicion l;ineal del programa
 // Por ejemplo
-let valor3 = prompt("Ingrese un valor");
-console.log(valor3 * 2);
+// let valor3 = prompt("Ingrese un valor");
+// console.log(valor3 * 2);
 
 // Y por otro laado tenemos una bifurcacion o ejecucion condicional kque modifica el flujo del programa
-let valor4 = prompt("Ingrese un valor");
-if (valor4 > 0) {
-    console.log(valor4 * 2);
-}
-else {
-    console.log(valor4 * 3);
-}
+// let valor4 = prompt("Ingrese un valor");
+// if (valor4 > 0) {
+//     console.log(valor4 * 2);
+// }
+// else {
+//     console.log(valor4 * 3);
+// }
 // El iif puede ser declarado en una sola linea
-if(valor4>0) console.log(valor4 * 2);
-else console.log(valor4 * 3);
+// if(valor4>0) console.log(valor4 * 2);
+// else console.log(valor4 * 3);
 
 // Ahora nos toca ciclos en esta parte del capitulo
 // Menciona tres ciclos for, while, do while
@@ -79,11 +79,11 @@ while(num2<10){
 }
 console.log(res2);
 // Por ultimo en esta parte utiliza un do while de forma muy interesante, para verificar si se ingresa o no un string
-let nom;
-do {
-    nom = prompt("Ingrese un nombre");
-} while (!nom);
-console.log(nom);
+// let nom;
+// do {
+//     nom = prompt("Ingrese un nombre");
+// } while (!nom);
+// console.log(nom);
 
 // La indentandion es importante, para que el codigo sea legible, pero no es de uso obligatorio por el codigo
 //  queda un ciclo por delante es es el for
@@ -111,3 +111,25 @@ for(let i = 20; ; i++) {
 //  contador--
 
 // Una opcion para seleccionar un condicional con multiples condiciones, es switch, pero no es muy utilizado
+
+// Lo que podemos usar para declarar las variables snake_case, o camelCase
+
+// Ejercicios post capitulo
+// Ciclo de triangulo
+let numeral= "";
+for (let i = 0; i < 7; i++) {
+    console.log(numeral += "#");
+}
+
+for (let i = 1; i < 101; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 == 0) {
+        console.log("Fizz");
+    } else if (i % 5 == 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
+    }
+}
+
